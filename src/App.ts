@@ -1,7 +1,7 @@
+import { Navbar, setupNavbar } from "./components/Navbar";
 import { SobreMi, setupSobreMi } from "./components/SobreMi";
 
 let darkMode = false
-
 const setDarkMode = (mode: boolean) => {
   darkMode = mode
   setupSobreMi(darkMode);
@@ -15,8 +15,9 @@ const DarkModeEffect = () => {
 }
 
 export const setupApp = () => {
+  setupNavbar()
   setupSobreMi(darkMode)
   DarkModeEffect()
 }
 
-export const App = SobreMi
+export const App = Navbar + SobreMi
