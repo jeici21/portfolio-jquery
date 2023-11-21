@@ -7,7 +7,7 @@ const setDarkMode = (mode: boolean) => {
   setupSobreMi(darkMode);
 }
 
-const DarkMode = () => {
+const DarkModeEffect = () => {
   const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
   setDarkMode(darkModeMediaQuery.matches);
   darkModeMediaQuery.addEventListener('change', e => setDarkMode(e.matches));
@@ -16,7 +16,7 @@ const DarkMode = () => {
 
 export const setupApp = () => {
   setupSobreMi(darkMode)
-  DarkMode()
+  DarkModeEffect()
 }
 
 export const App = SobreMi
