@@ -7,11 +7,6 @@ const span = css`
   }
 `
 
-let active = 0;
-const setActive = (value: number) => {
-  active = value;
-}
-
 export const setupNavbar = () => {
   const links = [
     { text: "Sobre mí", href: "#sobre-mi" },
@@ -28,10 +23,9 @@ export const setupNavbar = () => {
         </a>
       </li>
     `).find('a').on('click', function () {
-      setActive(index);
       $('#links li a').removeClass('fw-bold');
       $(this).addClass('fw-bold');
-    })
+    });
   })
 }
 
