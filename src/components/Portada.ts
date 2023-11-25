@@ -13,7 +13,7 @@ const h1 = css`
 `
 
 export const setupPortada = () => {
-  $('#boton-portada').on('click', function () {
+  $('#boton-portada').on('click', () => {
     window.open('https://1drv.ms/b/s!AmoVp6TBUcPb2GLIuS1R0-TOq4d7?e=3BST4b', '_blank')
   })
 }
