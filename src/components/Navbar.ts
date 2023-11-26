@@ -1,14 +1,8 @@
 import $ from 'jquery'
 
-export const setupNavbar = () => {
-  $('#links li a').on('click', function () {
-    $('#links li a').removeClass('active');
-    $(this).addClass('active');
-  });
-}
-
-export const Navbar = /*html*/`
-  <nav class="navbar navbar-expand-sm bg-primary sticky-top" data-bs-theme="dark">
+const Navbar = () => {
+  $('#app').append(/*html*/`
+    <nav class="navbar navbar-expand-sm bg-primary sticky-top" data-bs-theme="dark">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -30,5 +24,12 @@ export const Navbar = /*html*/`
           </li>
         </ul>
       </div>
-  </nav>
-`
+    </nav>
+  `)
+  $('#links li a').on('click', function () {
+    $('#links li a').removeClass('active');
+    $(this).addClass('active');
+  });
+}
+
+export default Navbar

@@ -1,6 +1,13 @@
 import $ from 'jquery'
 
-export const setupSobreMi = (darkMode: boolean) => {
+const SobreMi = (darkMode: boolean) => {
+  $('#sobre-mi').length > 0 && $('#sobre-mi').remove()
+  $('#app').append(/*html*/`
+    <div id="sobre-mi">
+      <p class="sobre-mi">Sobre Mí</p>
+      <p>Hola sobre mí</p>
+    </div>
+  `)
   if (darkMode) {
     $('.sobre-mi').css('color', 'blue')
   } else {
@@ -8,7 +15,4 @@ export const setupSobreMi = (darkMode: boolean) => {
   }
 }
 
-export const SobreMi = /*html*/`
-  <p class="sobre-mi">Sobre Mí</p>
-  <p>Hola sobre mí</p>
-`
+export default SobreMi

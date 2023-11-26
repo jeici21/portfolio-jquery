@@ -1,11 +1,11 @@
-import { Navbar, setupNavbar } from "./components/Navbar";
-import { Portada, setupPortada } from "./components/Portada";
-import { SobreMi, setupSobreMi } from "./components/SobreMi";
+import Navbar from "./components/Navbar";
+import Portada from "./components/Portada";
+import SobreMi from "./components/SobreMi";
 
 let darkMode = false
 const setDarkMode = (mode: boolean) => {
   darkMode = mode
-  setupSobreMi(darkMode);
+  SobreMi(darkMode);
 }
 
 const DarkModeEffect = () => {
@@ -15,11 +15,11 @@ const DarkModeEffect = () => {
   return () => darkModeMediaQuery.removeEventListener('change', e => setDarkMode(e.matches));
 }
 
-export const setupApp = () => {
-  setupNavbar()
-  setupPortada()
-  setupSobreMi(darkMode)
+export const App = () => {
   DarkModeEffect()
+  Navbar()
+  Portada()
+  SobreMi(darkMode)
 }
 
-export const App = Navbar + Portada + SobreMi
+export default App
