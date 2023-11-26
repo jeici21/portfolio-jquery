@@ -39,19 +39,19 @@ export const Portada = /*html*/`
         <div class="row px-5 fs-5">
           <div class="col">
             <a href="https://www.linkedin.com/in/jorge-castro-vargas-7242a8129/" target='_blank'
-              rel="noopener noreferrer" title="LinkedIn"><i class='bi bi-linkedin link-light'></i></a>
+              rel="noopener noreferrer" title="LinkedIn"><i class='bi bi-linkedin text-light'></i></a>
           </div>
           <div class="col">
             <a href="https://www.facebook.com/jeici21/" target='_blank'
-              rel="noopener noreferrer" title="Facebook"><i class='bi bi-facebook link-light'></i></a>
+              rel="noopener noreferrer" title="Facebook"><i class='bi bi-facebook text-light'></i></a>
           </div>
           <div class="col">
             <a href="https://twitter.com/cijei21" target='_blank'
-              rel="noopener noreferrer" title="X"><i class='bi bi-twitter-x link-light'></i></a>
+              rel="noopener noreferrer" title="X"><i class='bi bi-twitter-x text-light'></i></a>
           </div>
           <div class="col">
             <a href="https://github.com/jeici21" target='_blank'
-              rel="noopener noreferrer" title="GitHub"><i class='bi bi-github link-light'></i></a>
+              rel="noopener noreferrer" title="GitHub"><i class='bi bi-github text-light'></i></a>
           </div>
         </div>
         <button class="btn btn-light btn-lg my-5 rounded-0" id="boton-portada">
