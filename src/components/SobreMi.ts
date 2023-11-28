@@ -31,7 +31,7 @@ const SobreMi = () => {
   `)
 
   const checkVisibility = () => {
-    if ($(window).scrollTop() || 0 + ($(window).height() || 0) > ($('#sobre-mi').offset()?.top || 0)) {
+    if ($(window).scrollTop() || 0 + ($(window).height() || 0) > ($('#visible-row').offset()?.top || 0)) {
       $('#visible-row').removeClass(`opacity-0 invisible ${fadeinDiv('false')}`).addClass(`opacity-100 visible ${fadeinDiv('true')}`);
     } else {
       $('#visible-row').removeClass(`opacity-100 visible ${fadeinDiv('true')}`).addClass(`opacity-0 invisible ${fadeinDiv('false')}`)
