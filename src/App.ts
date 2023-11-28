@@ -5,7 +5,6 @@ import SobreMi from "./components/SobreMi";
 let darkMode = false
 const setDarkMode = (mode: boolean) => {
   darkMode = mode
-  SobreMi(darkMode);
 }
 
 const DarkModeEffect = () => {
@@ -19,7 +18,7 @@ export const App = () => {
   DarkModeEffect()
   Navbar()
   Portada()
-  SobreMi(darkMode)
+  SobreMi()
 }
 
 export default App
