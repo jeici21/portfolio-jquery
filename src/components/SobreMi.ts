@@ -39,7 +39,6 @@ const SobreMi = () => {
   }
 
   checkVisibility();
-
   $(window).on('scroll', () => {
     checkVisibility();
   });
