@@ -1,3 +1,4 @@
+import FormacionYExp from "./components/FormacionYExp";
 import Navbar from "./components/Navbar";
 import Portada from "./components/Portada";
 import SobreMi from "./components/SobreMi";
@@ -19,6 +20,7 @@ export const App = () => {
   Navbar()
   Portada()
   SobreMi()
+  FormacionYExp()
 }
 
 export default App

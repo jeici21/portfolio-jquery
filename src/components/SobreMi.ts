@@ -5,7 +5,7 @@ const SobreMi = () => {
   $('#app').append(/*html*/`
     <div class="bg-primary bg-opacity-10 pt-5" id="sobre-mi">
       <div class="container">
-        <div class="row" id="visible-row">
+        <div class="row" id="visible-sobre-mi">
           <div class="col-md-6">
             <h2 class="fst-italic text-primary text-center text-md-start">Sobre mí</h2>
             <p class="text-primary text-center text-md-start">MI PERFIL</p>
@@ -30,17 +30,17 @@ const SobreMi = () => {
     </div>
   `)
 
-  const checkVisibility = () => {
-    if ($(window).scrollTop() || 0 + ($(window).height() || 0) > ($('#visible-row').offset()?.top || 0)) {
-      $('#visible-row').removeClass(`opacity-0 invisible ${fadeinDiv('false')}`).addClass(`opacity-100 visible ${fadeinDiv('true')}`);
+  const checkSobreMiVisibility = () => {
+    if ($(window).scrollTop() || 0 + ($(window).height() || 0) > ($('#visible-sobre-mi').offset()?.top || 0)) {
+      $('#visible-sobre-mi').removeClass(`opacity-0 invisible ${fadeinDiv(false)}`).addClass(`opacity-100 visible ${fadeinDiv(true)}`);
     } else {
-      $('#visible-row').removeClass(`opacity-100 visible ${fadeinDiv('true')}`).addClass(`opacity-0 invisible ${fadeinDiv('false')}`)
+      $('#visible-sobre-mi').removeClass(`opacity-100 visible ${fadeinDiv(true)}`).addClass(`opacity-0 invisible ${fadeinDiv(false)}`)
     }
   }
 
-  checkVisibility();
+  checkSobreMiVisibility();
   $(window).on('scroll', () => {
-    checkVisibility();
+    checkSobreMiVisibility();
   });
 }
 
