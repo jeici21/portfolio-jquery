@@ -2,7 +2,6 @@ import $ from 'jquery'
 import { fadeinDiv } from '../utils/styledUtils'
 
 const SobreMi = () => {
-  $('#sobre-mi').length > 0 && $('#sobre-mi').remove()
   $('#app').append(/*html*/`
     <div class="bg-primary bg-opacity-10 pt-5" id="sobre-mi">
       <div class="container">
