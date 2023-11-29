@@ -1,3 +1,4 @@
+import Aptitudes from "./components/Aptitudes";
 import FormacionYExp from "./components/FormacionYExp";
 import Navbar from "./components/Navbar";
 import Portada from "./components/Portada";
@@ -6,6 +7,7 @@ import SobreMi from "./components/SobreMi";
 let darkMode = false
 const setDarkMode = (mode: boolean) => {
   darkMode = mode
+  Aptitudes(darkMode)
 }
 
 const DarkModeEffect = () => {
@@ -21,6 +23,7 @@ export const App = () => {
   Portada()
   SobreMi()
   FormacionYExp()
+  Aptitudes(darkMode)
 }
 
 export default App
