@@ -23,7 +23,7 @@ const Aptitudes = (darkMode: boolean) => {
   $.each(aptitudes, (_, aptitud) => {
     $('#aptitudes-cards').append(/*html*/`
       <div class="col-sm-6 col-md-4 col-lg-2 text-center">
-        <div class="card border-0 ${darkMode && 'bg-dark text-light'}">
+        <div class="card border-0 ${darkMode && 'text-bg-dark'}">
           <img class="card-img-top ${img}" src=${aptitud.icono} alt="Ícono">
           <div class="card-body"><div class="card-title fw-bold">${aptitud.nombre}</div></div>
         </div>
