@@ -1,4 +1,5 @@
 import Aptitudes from "./components/Aptitudes";
+import Footerbar from "./components/Footerbar";
 import FormacionYExp from "./components/FormacionYExp";
 import Navbar from "./components/Navbar";
 import Portada from "./components/Portada";
@@ -10,6 +11,7 @@ const setDarkMode = (mode: boolean) => {
   darkMode = mode
   Aptitudes(darkMode)
   Proyectos(darkMode)
+  Footerbar(darkMode)
 }
 
 const DarkModeEffect = () => {
@@ -27,6 +29,7 @@ export const App = () => {
   FormacionYExp()
   Aptitudes(darkMode)
   Proyectos(darkMode)
+  Footerbar(darkMode)
 }
 
 export default App
