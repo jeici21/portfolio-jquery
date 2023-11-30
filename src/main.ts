@@ -5,6 +5,4 @@ import 'bootstrap-icons/font/bootstrap-icons.min.css'
 import './style.css'
 import App from './App'
 
-$(() => {
-  App()
-})
+$(() => App())
