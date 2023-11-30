@@ -35,9 +35,7 @@ const FormacionYExp = () => {
   }
 
   checkFormacionYExpVisibility();
-  $(window).on('scroll', () => {
-    checkFormacionYExpVisibility();
-  });
+  $(window).on('scroll', () => checkFormacionYExpVisibility());
 }
 
 export default FormacionYExp

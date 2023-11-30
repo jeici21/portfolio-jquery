@@ -43,9 +43,7 @@ const Proyectos = (darkMode: boolean) => {
   }
 
   checkProyectosVisibility();
-  $(window).on('scroll', () => {
-    checkProyectosVisibility();
-  });
+  $(window).on('scroll', () => checkProyectosVisibility());
 }
 
 export default Proyectos

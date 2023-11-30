@@ -39,9 +39,7 @@ const SobreMi = () => {
   }
 
   checkSobreMiVisibility();
-  $(window).on('scroll', () => {
-    checkSobreMiVisibility();
-  });
+  $(window).on('scroll', () => checkSobreMiVisibility());
 }
 
 export default SobreMi

@@ -31,7 +31,7 @@ const Footerbar = (darkMode: boolean) => {
                 </div>
                 <div class="col-auto">
                   <button class="btn btn-outline-primary border-2 rounded-circle" 
-                  title='Volver al Inicio' id="footer-inicio"><i className="bi bi-chevron-up"></i></button>
+                  title='Volver al Inicio' id="footer-inicio"><i class="bi bi-chevron-up"></i></button>
                 </div>
               </div>
             </div>
@@ -46,9 +46,7 @@ const Footerbar = (darkMode: boolean) => {
   $('#footer-cv').on('click', () => {
     window.open("https://1drv.ms/b/s!AmoVp6TBUcPb2GLIuS1R0-TOq4d7?e=3BST4b", '_blank')
   })
-  $('#footer-inicio').on('click', () => {
-    window.scrollTo(0, 0)
-  })
+  $('#footer-inicio').on('click', () => window.scrollTo(0, 0))
 }
 
 export default Footerbar

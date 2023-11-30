@@ -40,9 +40,7 @@ const Aptitudes = (darkMode: boolean) => {
   }
 
   checkAptitudesVisibility();
-  $(window).on('scroll', () => {
-    checkAptitudesVisibility();
-  });
+  $(window).on('scroll', () => checkAptitudesVisibility());
 }
 
 export default Aptitudes
