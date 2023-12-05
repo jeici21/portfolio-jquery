@@ -16,7 +16,7 @@ const Portada = () => {
   $('#app').append(/*html*/`
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-9 text-light d-flex flex-column align-items-center justify-content-end position-relative pt-5 pt-md-0 ${div}">
+        <div class="col-md-9 text-light d-flex flex-column align-items-center justify-content-end pt-5 pt-md-0 ${div}">
           <div class='z-1 position-relative'>
             <p class='fs-5'>HOLA, SOY</p>
             <h1 class='fw-bold ${h1}'>Jorge Castro</h1>

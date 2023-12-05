@@ -2,7 +2,7 @@ import $ from 'jquery'
 
 const Navbar = () => {
   $('#app').append(/*html*/`
-    <nav class="navbar navbar-expand-sm bg-primary sticky-top" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md bg-primary sticky-top" data-bs-theme="dark">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
