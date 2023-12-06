@@ -3,7 +3,7 @@ import { fadeinDiv } from '../utils/styledUtils'
 
 const FormacionYExp = () => {
   $('#app').append(/*html*/`
-    <div class="container pt-5" id="formacion-y-experiencia">
+    <div class="container pt-5" id="formacion-y-exp">
       <div class="row" id="visible-form-y-exp">
         <div class="col-md-6">
           <h2 class="fst-italic text-primary text-center text-md-start">Formación</h2>
