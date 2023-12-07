@@ -32,9 +32,11 @@ const SobreMi = () => {
 
   const checkSobreMiVisibility = () => {
     if ($(window).scrollTop() || 0 + ($(window).height() || 0) > ($('#visible-sobre-mi').offset()?.top || 0)) {
-      $('#visible-sobre-mi').removeClass(`opacity-0 invisible ${fadeinDiv(false)}`).addClass(`opacity-100 visible ${fadeinDiv(true)}`);
+      $('#visible-sobre-mi').removeClass(`opacity-0 invisible ${fadeinDiv(false)}`)
+        .addClass(`opacity-100 visible ${fadeinDiv(true)}`);
     } else {
-      $('#visible-sobre-mi').removeClass(`opacity-100 visible ${fadeinDiv(true)}`).addClass(`opacity-0 invisible ${fadeinDiv(false)}`)
+      $('#visible-sobre-mi').removeClass(`opacity-100 visible ${fadeinDiv(true)}`)
+        .addClass(`opacity-0 invisible ${fadeinDiv(false)}`)
     }
   }
 

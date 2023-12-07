@@ -33,9 +33,11 @@ const Aptitudes = (darkMode: boolean) => {
 
   const checkAptitudesVisibility = () => {
     if (($(window).scrollTop() || 0 / 3) + ($(window).height() || 0) > ($('#aptitudes').offset()?.top || 0)) {
-      $('#aptitudes').removeClass(`opacity-0 invisible ${fadeinDiv(false)}`).addClass(`opacity-100 visible ${fadeinDiv(true)}`);
+      $('#aptitudes').removeClass(`opacity-0 invisible ${fadeinDiv(false)}`)
+        .addClass(`opacity-100 visible ${fadeinDiv(true)}`);
     } else {
-      $('#aptitudes').removeClass(`opacity-100 visible ${fadeinDiv(true)}`).addClass(`opacity-0 invisible ${fadeinDiv(false)}`)
+      $('#aptitudes').removeClass(`opacity-100 visible ${fadeinDiv(true)}`)
+        .addClass(`opacity-0 invisible ${fadeinDiv(false)}`)
     }
   }
 

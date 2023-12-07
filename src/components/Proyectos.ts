@@ -36,9 +36,11 @@ const Proyectos = (darkMode: boolean) => {
 
   const checkProyectosVisibility = () => {
     if (($(window).scrollTop() || 0 / 4) + ($(window).height() || 0) > ($('#proyectos').offset()?.top || 0)) {
-      $('#proyectos').removeClass(`opacity-0 invisible ${fadeinDiv(false)}`).addClass(`opacity-100 visible ${fadeinDiv(true)}`);
+      $('#proyectos').removeClass(`opacity-0 invisible ${fadeinDiv(false)}`)
+        .addClass(`opacity-100 visible ${fadeinDiv(true)}`);
     } else {
-      $('#proyectos').removeClass(`opacity-100 visible ${fadeinDiv(true)}`).addClass(`opacity-0 invisible ${fadeinDiv(false)}`)
+      $('#proyectos').removeClass(`opacity-100 visible ${fadeinDiv(true)}`)
+        .addClass(`opacity-0 invisible ${fadeinDiv(false)}`)
     }
   }
 
