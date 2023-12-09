@@ -28,9 +28,9 @@ const FormacionYExp = () => {
   const checkFormacionYExpVisibility = () => {
     if (($(window).scrollTop() || 0 / 2) + ($(window).height() || 0) > ($('#visible-form-y-exp').offset()?.top || 0)) {
       $('#visible-form-y-exp').removeClass('opacity-0 invisible fadeInDiv hidden')
-        .addClass('opacity-100 visible fadeInDiv visible');
+        .addClass('opacity-100 visible fadeInDiv open');
     } else {
-      $('#visible-form-y-exp').removeClass('opacity-100 visible fadeInDiv visible')
+      $('#visible-form-y-exp').removeClass('opacity-100 visible fadeInDiv open')
         .addClass('opacity-0 invisible fadeInDiv hidden')
     }
   }

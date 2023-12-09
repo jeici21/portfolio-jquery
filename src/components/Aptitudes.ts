@@ -25,9 +25,9 @@ const Aptitudes = (darkMode: boolean) => {
   const checkAptitudesVisibility = () => {
     if (($(window).scrollTop() || 0 / 3) + ($(window).height() || 0) > ($('#aptitudes').offset()?.top || 0)) {
       $('#aptitudes').removeClass('opacity-0 invisible fadeInDiv hidden')
-        .addClass('opacity-100 visible fadeInDiv visible');
+        .addClass('opacity-100 visible fadeInDiv open');
     } else {
-      $('#aptitudes').removeClass('opacity-100 visible fadeInDiv visible')
+      $('#aptitudes').removeClass('opacity-100 visible fadeInDiv open')
         .addClass('opacity-0 invisible fadeInDiv hidden')
     }
   }
