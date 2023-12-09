@@ -1,25 +1,15 @@
-import { css } from "@emotion/css";
-import fondo from '../assets/fondo.jpg'
 import yo from '../assets/yo.jpeg'
 import $ from 'jquery'
-
-const div = css`
-  background: linear-gradient(rgba(1, 33, 82, 0.5), rgba(1, 33, 82, 0.5)), url(${fondo}) fixed;
-  background-size: auto 125%;
-`
-
-const h1 = css`
-  font-size: 5rem;
-`
+import styles from '../styles/Portada.module.css'
 
 const Portada = () => {
   $('#app').append(/*html*/`
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-9 text-light d-flex flex-column align-items-center justify-content-end pt-5 pt-md-0 ${div}">
+        <div class="col-md-9 text-light d-flex flex-column align-items-center justify-content-end pt-5 pt-md-0 ${styles.portadaDiv}">
           <div class='z-1 position-relative'>
             <p class='fs-5'>HOLA, SOY</p>
-            <h1 class='fw-bold ${h1}'>Jorge Castro</h1>
+            <h1 class='fw-bold ${styles.nombreH1}'>Jorge Castro</h1>
             <h5 class='fst-italic'>Ingeniero en Sistemas Computacionales</h5>
           </div>
         </div>

@@ -1,5 +1,4 @@
 import $ from 'jquery'
-import { fadeinDiv } from '../utils/styledUtils'
 import { proyectos } from '../data/proyectos'
 
 const Proyectos = (darkMode: boolean) => {
@@ -36,11 +35,11 @@ const Proyectos = (darkMode: boolean) => {
 
   const checkProyectosVisibility = () => {
     if (($(window).scrollTop() || 0 / 4) + ($(window).height() || 0) > ($('#proyectos').offset()?.top || 0)) {
-      $('#proyectos').removeClass(`opacity-0 invisible ${fadeinDiv(false)}`)
-        .addClass(`opacity-100 visible ${fadeinDiv(true)}`);
+      $('#proyectos').removeClass('opacity-0 invisible fadeInDiv hidden')
+        .addClass('opacity-100 visible fadeInDiv visible');
     } else {
-      $('#proyectos').removeClass(`opacity-100 visible ${fadeinDiv(true)}`)
-        .addClass(`opacity-0 invisible ${fadeinDiv(false)}`)
+      $('#proyectos').removeClass('opacity-100 visible fadeInDiv visible')
+        .addClass('opacity-0 invisible fadeInDiv hidden')
     }
   }
 

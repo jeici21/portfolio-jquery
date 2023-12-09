@@ -1,5 +1,4 @@
 import $ from 'jquery'
-import { fadeinDiv } from '../utils/styledUtils'
 
 const FormacionYExp = () => {
   $('#app').append(/*html*/`
@@ -28,11 +27,11 @@ const FormacionYExp = () => {
 
   const checkFormacionYExpVisibility = () => {
     if (($(window).scrollTop() || 0 / 2) + ($(window).height() || 0) > ($('#visible-form-y-exp').offset()?.top || 0)) {
-      $('#visible-form-y-exp').removeClass(`opacity-0 invisible ${fadeinDiv(false)}`)
-        .addClass(`opacity-100 visible ${fadeinDiv(true)}`);
+      $('#visible-form-y-exp').removeClass('opacity-0 invisible fadeInDiv hidden')
+        .addClass('opacity-100 visible fadeInDiv visible');
     } else {
-      $('#visible-form-y-exp').removeClass(`opacity-100 visible ${fadeinDiv(true)}`)
-        .addClass(`opacity-0 invisible ${fadeinDiv(false)}`)
+      $('#visible-form-y-exp').removeClass('opacity-100 visible fadeInDiv visible')
+        .addClass('opacity-0 invisible fadeInDiv hidden')
     }
   }
 

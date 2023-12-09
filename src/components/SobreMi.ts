@@ -1,5 +1,4 @@
 import $ from 'jquery'
-import { fadeinDiv } from '../utils/styledUtils'
 
 const SobreMi = () => {
   $('#app').append(/*html*/`
@@ -32,11 +31,11 @@ const SobreMi = () => {
 
   const checkSobreMiVisibility = () => {
     if ($(window).scrollTop() || 0 + ($(window).height() || 0) > ($('#visible-sobre-mi').offset()?.top || 0)) {
-      $('#visible-sobre-mi').removeClass(`opacity-0 invisible ${fadeinDiv(false)}`)
-        .addClass(`opacity-100 visible ${fadeinDiv(true)}`);
+      $('#visible-sobre-mi').removeClass('opacity-0 invisible fadeInDiv hidden')
+        .addClass('opacity-100 visible fadeInDiv visible');
     } else {
-      $('#visible-sobre-mi').removeClass(`opacity-100 visible ${fadeinDiv(true)}`)
-        .addClass(`opacity-0 invisible ${fadeinDiv(false)}`)
+      $('#visible-sobre-mi').removeClass('opacity-100 visible fadeInDiv visible')
+        .addClass('opacity-0 invisible fadeInDiv hidden')
     }
   }
 
