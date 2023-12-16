@@ -39,16 +39,14 @@ const Portada = () => {
                 rel="noopener noreferrer" title="GitHub"><i class='bi bi-github text-light'></i></a>
             </div>
           </div>
-          <button class="btn btn-light btn-lg my-5 rounded-0" id="boton-portada">
+          <a href="https://1drv.ms/b/s!AmoVp6TBUcPb2GLIuS1R0-TOq4d7?e=3BST4b" target="_blank" 
+            class="btn btn-light btn-lg my-5 rounded-0" rel="noopener noreferrer">
             <i class="bi bi-download"></i> Descargar CV
-          </button>
+          </a>
         </div>
       </div>
     </div>
   `)
-  $('#boton-portada').on('click', () => {
-    window.open('https://1drv.ms/b/s!AmoVp6TBUcPb2GLIuS1R0-TOq4d7?e=3BST4b', '_blank')
-  })
 }
 
 export default Portada

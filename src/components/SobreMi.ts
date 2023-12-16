@@ -30,7 +30,10 @@ const SobreMi = () => {
   `)
 
   const checkSobreMiVisibility = () => {
-    if ($(window).scrollTop() || 0 + ($(window).height() || 0) > ($('#visible-sobre-mi').offset()?.top || 0)) {
+    const windowPosition = ($(window).scrollTop() || 0) + ($(window).height() || 0);
+    const elementPosition = $('#visible-sobre-mi').offset()?.top || 0;
+
+    if (windowPosition > elementPosition) {
       $('#visible-sobre-mi').removeClass('opacity-0 invisible fadeInDiv hidden')
         .addClass('opacity-100 visible fadeInDiv open');
     } else {

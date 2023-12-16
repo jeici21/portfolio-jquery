@@ -26,7 +26,10 @@ const FormacionYExp = () => {
   `)
 
   const checkFormacionYExpVisibility = () => {
-    if (($(window).scrollTop() || 0 / 2) + ($(window).height() || 0) > ($('#visible-form-y-exp').offset()?.top || 0)) {
+    const windowPosition = ($(window).scrollTop() || 0 / 2) + ($(window).height() || 0);
+    const elementPosition = $('#visible-form-y-exp').offset()?.top || 0;
+
+    if (windowPosition > elementPosition) {
       $('#visible-form-y-exp').removeClass('opacity-0 invisible fadeInDiv hidden')
         .addClass('opacity-100 visible fadeInDiv open');
     } else {

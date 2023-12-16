@@ -23,7 +23,10 @@ const Aptitudes = (darkMode: boolean) => {
   })
 
   const checkAptitudesVisibility = () => {
-    if (($(window).scrollTop() || 0 / 3) + ($(window).height() || 0) > ($('#aptitudes').offset()?.top || 0)) {
+    const windowPosition = ($(window).scrollTop() || 0 / 3) + ($(window).height() || 0);
+    const elementPosition = $('#aptitudes').offset()?.top || 0;
+
+    if (windowPosition > elementPosition) {
       $('#aptitudes').removeClass('opacity-0 invisible fadeInDiv hidden')
         .addClass('opacity-100 visible fadeInDiv open');
     } else {

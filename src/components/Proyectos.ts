@@ -34,7 +34,10 @@ const Proyectos = (darkMode: boolean) => {
   })
 
   const checkProyectosVisibility = () => {
-    if (($(window).scrollTop() || 0 / 4) + ($(window).height() || 0) > ($('#proyectos').offset()?.top || 0)) {
+    const windowPosition = ($(window).scrollTop() || 0 / 4) + ($(window).height() || 0);
+    const elementPosition = $('#proyectos').offset()?.top || 0;
+
+    if (windowPosition > elementPosition) {
       $('#proyectos').removeClass('opacity-0 invisible fadeInDiv hidden')
         .addClass('opacity-100 visible fadeInDiv open');
     } else {

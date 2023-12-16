@@ -26,12 +26,13 @@ const Footerbar = (darkMode: boolean) => {
               <p>Tel: +593997543298</p>
               <div class="row justify-content-around align-items-center pt-5">
                 <div class="col-auto">
-                  <button class="btn btn-primary btn-lg rounded-0" aria-label="Descargar CV" 
-                  id="footer-cv"><i class="bi bi-download"></i> Descargar CV</button>
+                  <a href="https://1drv.ms/b/s!AmoVp6TBUcPb2GLIuS1R0-TOq4d7?e=3BST4b" target="_blank"
+                    class="btn btn-primary btn-lg rounded-0" aria-label="Descargar CV" 
+                    rel="noopener noreferrer"><i class="bi bi-download"></i> Descargar CV</a>
                 </div>
                 <div class="col-auto">
-                  <button class="btn btn-outline-primary border-2 rounded-circle" 
-                  title='Volver al Inicio' id="footer-inicio"><i class="bi bi-chevron-up"></i></button>
+                  <a href="#" class="btn btn-outline-primary border-2 rounded-circle" 
+                    title='Volver al Inicio'><i class="bi bi-chevron-up"></i></a>
                 </div>
               </div>
             </div>
@@ -43,10 +44,6 @@ const Footerbar = (darkMode: boolean) => {
       </footer>
     </div>
   `)
-  $('#footer-cv').on('click', () => {
-    window.open("https://1drv.ms/b/s!AmoVp6TBUcPb2GLIuS1R0-TOq4d7?e=3BST4b", '_blank')
-  })
-  $('#footer-inicio').on('click', () => window.scrollTo(0, 0))
 }
 
 export default Footerbar
