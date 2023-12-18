@@ -39,7 +39,7 @@ const Footerbar = (darkMode: boolean) => {
           </div>
         </div>
       </div>
-      <footer class="bg-primary text-white fst-italic ps-5 py-4">
+      <footer class="bg-primary text-white fst-italic ps-5 py-3">
         © ${new Date().getFullYear()} Diseñado por Jorge Castro Vargas.
       </footer>
     </div>

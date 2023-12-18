@@ -14,7 +14,7 @@ const Portada = () => {
           </div>
         </div>
         <div class="col-md-3 text-bg-primary text-center pt-5 pt-md-0">
-          <img src=${yo} alt="Yo" width="150" height='150' class="rounded-circle">
+          <img src=${yo} alt="Yo" width="200" height='200' class="rounded-circle">
           <h1 class='fw-bold pt-5'>Jorge Castro</h1>
           <p class='py-4'>Ingeniero en Sistemas Computacionales.<br />Universidad Estatal de Milagro</p>
           <a href="mailto:david92_jc@yahoo.es" class='link-light link-underline-opacity-0 link-underline-opacity-100-hover'>
