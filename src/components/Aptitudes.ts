@@ -1,4 +1,3 @@
-import $ from 'jquery'
 import styles from '../styles/Aptitudes.module.css'
 import { aptitudes } from '../data/aptitudes'
 

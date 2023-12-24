@@ -1,5 +1,4 @@
 import yo from '../assets/yo.jpeg'
-import $ from 'jquery'
 import styles from '../styles/Portada.module.css'
 
 const Portada = () => {

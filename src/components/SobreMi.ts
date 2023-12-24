@@ -1,5 +1,3 @@
-import $ from 'jquery'
-
 const SobreMi = () => {
   $('#app').append(/*html*/`
     <div class="bg-primary bg-opacity-10 pt-5" id="sobre-mi">

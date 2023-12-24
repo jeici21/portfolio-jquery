@@ -1,5 +1,3 @@
-import $ from 'jquery'
-
 const Navbar = () => {
   $('#app').append(/*html*/`
     <nav class="navbar navbar-expand-md bg-primary sticky-top" data-bs-theme="dark">

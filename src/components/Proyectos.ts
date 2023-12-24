@@ -1,4 +1,3 @@
-import $ from 'jquery'
 import { proyectos } from '../data/proyectos'
 
 const Proyectos = (darkMode: boolean) => {

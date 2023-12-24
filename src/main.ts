@@ -5,4 +5,10 @@ import 'bootstrap-icons/font/bootstrap-icons.min.css'
 import './style.css'
 import App from './App'
 
+declare global {
+  interface Window { $: JQueryStatic; }
+}
+
+window.$ = $;
+
 $(() => App())

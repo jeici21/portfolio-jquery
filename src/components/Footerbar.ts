@@ -1,5 +1,3 @@
-import $ from 'jquery'
-
 const Footerbar = (darkMode: boolean) => {
   $('#footer').length > 0 && $('#footer').remove()
   $('#app').append(/*html*/`

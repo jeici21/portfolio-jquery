@@ -1,5 +1,3 @@
-import $ from 'jquery'
-
 const FormacionYExp = () => {
   $('#app').append(/*html*/`
     <div class="container pt-5" id="formacion-y-exp">
