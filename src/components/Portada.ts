@@ -17,8 +17,7 @@ const Portada = () => {
           <h1 class='fw-bold pt-5'>Jorge Castro</h1>
           <p class='py-4'>Ingeniero en Sistemas Computacionales.<br />Universidad Estatal de Milagro</p>
           <a href="mailto:david92_jc@yahoo.es" class='link-light link-underline-opacity-0 link-underline-opacity-100-hover'>
-            david92_jc@yahoo.es
-          </a>
+            david92_jc@yahoo.es</a>
           <p>Tel: +593997543298</p>
           <div class="row px-5 fs-5">
             <div class="col">
