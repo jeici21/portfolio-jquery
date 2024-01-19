@@ -8,7 +8,7 @@ const Portada = () => {
         <div class="col-md-9 text-light d-flex flex-column align-items-center justify-content-end pt-5 pt-md-0 ${styles.portadaDiv}">
           <div class='z-1 position-relative'>
             <p class='fs-5'>HOLA, SOY</p>
-            <h1 class='fw-bold ${styles.nombreH1}'>Jorge Castro</h1>
+            <h1 class='fw-bold display-1'>Jorge Castro</h1>
             <h5 class='fst-italic'>Ingeniero en Sistemas Computacionales</h5>
           </div>
         </div>
